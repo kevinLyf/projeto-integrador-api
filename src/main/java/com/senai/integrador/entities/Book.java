@@ -12,6 +12,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "books")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
@@ -21,7 +22,7 @@ public class Book implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
+    private String image;
     private String title;
     private double price;
     private String synopsis;
@@ -34,8 +35,7 @@ public class Book implements Serializable {
     @Column(name = "genre")
     private Genre genre;
 
-
-    private int raking;
+    private double raking;
     private String createAt = DateTimeFormatter.ofPattern("dd/MM/yyyy").format(LocalDateTime.now());
     private String stockDate;
 }
