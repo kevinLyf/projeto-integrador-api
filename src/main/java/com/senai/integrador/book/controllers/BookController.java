@@ -1,8 +1,8 @@
-package com.senai.integrador.controllers;
+package com.senai.integrador.book.controllers;
 
-import com.senai.integrador.dtos.BookRecordDto;
-import com.senai.integrador.entities.Book;
-import com.senai.integrador.repositories.BookRepository;
+import com.senai.integrador.book.dtos.BookRecordDto;
+import com.senai.integrador.book.repositories.BookRepository;
+import com.senai.integrador.book.entities.Book;
 import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,6 @@ import java.util.UUID;
 @RequestMapping("/api/book")
 
 public class BookController {
-
     @Autowired
     BookRepository bookRepository;
 

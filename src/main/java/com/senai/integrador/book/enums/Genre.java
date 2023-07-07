@@ -1,4 +1,4 @@
-package com.senai.integrador.enums;
+package com.senai.integrador.book.enums;
 public enum Genre {
     ROMANCE,
     FICCAO_CIENTIFICA,

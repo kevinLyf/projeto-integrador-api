@@ -1,6 +1,6 @@
-package com.senai.integrador.entities;
+package com.senai.integrador.book.entities;
 
-import com.senai.integrador.enums.Genre;
+import com.senai.integrador.book.enums.Genre;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -36,6 +36,7 @@ public class Book implements Serializable {
     private Genre genre;
 
     private double raking;
+
     private String createAt = DateTimeFormatter.ofPattern("dd/MM/yyyy").format(LocalDateTime.now());
     private String stockDate;
 }
